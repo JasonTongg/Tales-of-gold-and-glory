@@ -2,11 +2,19 @@
 
 <p align="center">
   <a href="https://talesofgoldglory.com/">
-    <img src="https://github.com/JasonTongg/Tales-of-gold-and-glory/blob/main/public/assets/tales-banner.png" alt="Tales of Gold & Glory" width="300"/>
+    <img src="https://github.com/JasonTongg/Tales-of-gold-and-glory/blob/main/public/assets/Banner.png" alt="Tales of Gold & Glory" width="300"/>
   </a>
 </p>
 
-**[👉 Try it out here!](https://talesofgoldglory.com/)**
+**Quest Available:**  
+Brave adventurer, the King awaits your jokes!  
+Test your humor, earn glory, and see if fortune favors you.
+
+👉 **[Start Adventure Now](https://talesofgoldglory.com/)**
+
+---
+
+## What is Tales of Gold & Glory?
 
 Tales of Gold & Glory is a web-based game built with the Next.js framework (React) where players amuse a king by submitting witty jokes. Each joke submission triggers a blockchain transaction (using the HLUSD stablecoin) and is automatically rated by an AI (via the OpenAI API). The app’s code is a Next.js project (Node.js) with a front-end UI and local data storage. To develop or customize this project, clone the repo and follow the instructions below. HLUSD (HeLa USD) is a stablecoin (≈ $1.00) used for on-chain fees, so the account you use must hold enough HLUSD tokens.
 
@@ -57,7 +65,7 @@ Tales of Gold & Glory is a web-based game built with the Next.js framework (Reac
 The .env file (based on .env.example) must define the following variables:
 
 - PRIVATE_KEY – The private key (in hex format) of an account on the blockchain. This account will pay gas (in HLUSD) when a user submits a joke. Important: This key grants control of the account, so keep it secret. Ensure this account holds sufficient HLUSD tokens on the Mainnet.
-- NEXT*PUBLIC_TOKEN_CONTRACT – The address of the token contract on the blockchain (ERC-20 contract). The NEXT_PUBLIC* prefix is required so that Next.js can bundle this variable into the client code. After build, process.env.NEXT_PUBLIC_TOKEN_CONTRACT will be inlined into the JavaScript sent to the browser.
+- NEXT_PUBLIC_TOKEN_CONTRACT – The address of the token contract on the blockchain (ERC-20 contract). The NEXT_PUBLIC prefix is required so that Next.js can bundle this variable into the client code. After build, process.env.NEXT_PUBLIC_TOKEN_CONTRACT will be inlined into the JavaScript sent to the browser.
 - OPENAI_API_KEY – Your OpenAI API key for the AI joke-rating service. This key is used server-side to authenticate with the OpenAI API (not exposed to the browser).
 
 For example, .env might look like:
@@ -69,7 +77,7 @@ NEXT_PUBLIC_TOKEN_CONTRACT=0xAbC123...
 OPENAI_API_KEY=sk-XXXX...
 ```
 
-Make sure the NEXT*PUBLIC_TOKEN_CONTRACT value matches the correct contract address on the network. The NEXT_PUBLIC* prefix ensures this address is accessible to front-end code as described in the Next.js docs.
+Make sure the NEXT_PUBLIC_TOKEN_CONTRACT value matches the correct contract address on the network. The NEXT_PUBLIC prefix ensures this address is accessible to front-end code as described in the Next.js docs.
 
 ## Project Structure
 
