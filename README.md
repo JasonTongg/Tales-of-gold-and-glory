@@ -6,6 +6,10 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://x.com/TalesOfGoldGlory">Follow us on Twitter</a>
+</p>
+
 **Quest Available:**  
 Brave adventurer, the King awaits your jokes!  
 Test your humor, earn glory, and see if fortune favors you.
